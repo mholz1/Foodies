@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>   
+    <meta charset="utf-8" />
+    <title>Foodies</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="nav-wrapper">
+            <div class="left-side">
+                <div class="nav-link-wrapper">
+                    <a href="index.html">Home</a>
+                </div>
+                <div class="nav-link-wrapper">
+                    <a href="about.html">Add Recipe</a>
+                </div>
+            </div>
+
+            <div class="right-side">
+                <div class="brand">
+                    <div>FOODIES</div>
+                </div>
+            </div>
+        </div>
+          
+        <div class="content-wrapper">
+            <div class="portfolio-items-wrapper">
+      
+              <div class="portfolio-item-wrapper">
+                <div class="portfolio-img-background" style="background-image:url(ice-tea-mocktail-19140-2.jpg)"></div>
+                <div class="subtitle">
+                    <a href="https://www.delicious.com.au/recipes/ice-tea-mocktail/d1277278-ec63-437c-b042-b3b24aed01d7?r=recipes/collections/h1dvzfyc">Iced Tea</a>
+                </div>
+                
+            </div>
+      
+                <div class="portfolio-item-wrapper">
+                  <div class="portfolio-img-background" style="background-image:url(grilled-watermelon-ink-gin-and-mint-cocktail-36911-2.jpg)"></div>
+                  <div class="subtitle">
+                    <a href="https://www.delicious.com.au/recipes/grilled-watermelon-ink-gin-mint-cocktail/ZlItPtcS?r=recipes/collections/h1dvzfyc">Grilled Watermelon Mint</a>
+                  </div>
+                  
+            </div>
+      
+                <div class="portfolio-item-wrapper">
+                  <div class="portfolio-img-background" style="background-image:url(strawberry-and-orange-spritz.jpeg)"></div>
+                  <div class="subtitle">
+                      <a href="https://www.delicious.com.au/recipes/strawberry-orange-spritz/e6e25fcb-b9a2-40e1-a6eb-91848df614e6?current_section=recipes&r=recipes/collections/h1dvzfyc">Strawberry and Orange</a>
+                  </div>
+                  
+            </div>
+      
+                <div class="portfolio-item-wrapper">
+                  <div class="portfolio-img-background" style="background-image:url(pomegranate-vodka-and-violet-granita.jpeg)"></div>
+                  <div class="subtitle">
+                      <a href="https://www.delicious.com.au/recipes/pomegranate-vodka-violet-granita/gXlOHNMQ?r=recipes/collections/h1dvzfyc">Pomegranate</a> 
+                  </div>
+                  
+            </div>
+      
+                <div class="portfolio-item-wrapper">
+                  <div class="portfolio-img-background" style="background-image:url(orange-and-basil-pimms.jpeg)"></div>
+                  <div class="subtitle">
+                      <a href="https://www.delicious.com.au/recipes/orange-basil-pimms/592c8019-7617-4fb3-be65-05acf8a029c4?r=recipes/collections/h1dvzfyc">Orange and Basil</a>
+                  </div>
+            </div>
+      
+                <div class="portfolio-item-wrapper">
+                  <div class="portfolio-img-background" style="background-image:url(raspberry-prosecco-and-mint-cocktail-14192-2.jpg)"></div>
+                  <div class="subtitle">
+                     <a href="https://www.delicious.com.au/recipes/raspberry-prosecco-mint-cocktail/c00fe408-357f-495f-9deb-0274313e6f57?current_section=recipes">Rapberry, Prosecco, and Mint</a>
+                  </div>
+                  
+        
+            </div>
+
+                
+        </div>
+    </div>
+</body>
+<script>
+    const portfolioItems = document.querySelectorAll('.portfolio-item-wrapper')
+
+    portfolioItems.forEach(portfolioItem => {
+        portfolioItem.addEventListener('mouseover', () => {
+           
+            portfolioItem.childNodes[1].classList.add('img-darken');
+        })
+         portfolioItem.addEventListener('mouseout', () => {
+           
+            portfolioItem.childNodes[1].classList.remove('img-darken');
+        })
+    })
+</script>
+</html>

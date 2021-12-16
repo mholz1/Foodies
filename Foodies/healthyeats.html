@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>   
+    <meta charset="utf-8" />
+    <title>Foodies</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="nav-wrapper">
+            <div class="left-side">
+                <div class="nav-link-wrapper">
+                    <a href="index.html">Home</a>
+                </div>
+                <div class="nav-link-wrapper">
+                    <a href="about.html">Add Recipe</a>
+                </div>
+            </div>
+
+            <div class="right-side">
+                <div class="brand">
+                    <div>FOODIES</div>
+                </div>
+            </div>
+        </div>
+          
+        <div class="content-wrapper">
+            <div class="portfolio-items-wrapper">
+      
+              <div class="portfolio-item-wrapper">
+                <div class="portfolio-img-background" style="background-image:url(sesame-beef-with-gochujang-udon-noodles-157974-2.jpg)"></div>
+                <div class="subtitle">
+                    <a href="https://www.delicious.com.au/recipes/sesame-beef-gochujang-udon-noodles-recipe/mwweq4c2?r=recipes/collections/1vo4q819">Seame Beef with Gochujang Undon Noodles</a>
+                </div>
+                
+            </div>
+      
+                <div class="portfolio-item-wrapper">
+                  <div class="portfolio-img-background" style="background-image:url(tomato-vodka-rigatoni-154261-2.jpg)"></div>
+                  <div class="subtitle">
+                    <a href="https://www.delicious.com.au/recipes/tomato-vodka-rigatoni-recipe/04apcxde?r=recipes/collections/1vo4q819">Tomato Vodka Rigatoni</a>
+                  </div>
+                  
+            </div>
+      
+                <div class="portfolio-item-wrapper">
+                  <div class="portfolio-img-background" style="background-image:url(the-wood-familyys-puttanesca-154260-1.jpg)"></div>
+                  <div class="subtitle">
+                      <a href="https://www.delicious.com.au/recipes/wood-familys-puttanesca-pasta-recipe/p3ztsbw3?r=recipes/collections/1vo4q819">Woods Family Puttanesca</a>
+                  </div>
+                  
+            </div>
+      
+                <div class="portfolio-item-wrapper">
+                  <div class="portfolio-img-background" style="background-image:url(asian-eggs-47827-2.jpg)"></div>
+                  <div class="subtitle">
+                      <a href="https://www.delicious.com.au/recipes/asian-eggs-del-sunday/ynOiUexz">Asian Eggs</a> 
+                  </div>
+                  
+            </div>
+      
+                <div class="portfolio-item-wrapper">
+                  <div class="portfolio-img-background" style="background-image:url(penne-allyarrabbiata-154259-2.jpg)"></div>
+                  <div class="subtitle">
+                      <a href="https://www.delicious.com.au/recipes/penne-allarrabbiata-recipe/3v6fevp3?r=recipes/collections/1vo4q819">Penne All'Arrabbiata</a>
+                  </div>
+            </div>
+      
+                <div class="portfolio-item-wrapper">
+                  <div class="portfolio-img-background" style="background-image:url(summer-chopped-salad-with-citrus-sesame-dressing-142256-1.jpg)"></div>
+                  <div class="subtitle">
+                     <a href="https://www.delicious.com.au/recipes/summer-chopped-salad-citrus-sesame-dressing-recipe/m1udwhpo?r=recipes/collections/1vo4q819">Summer Chopped Salad</a>
+                  </div>
+                  
+        
+            </div>
+
+                
+        </div>
+    </div>
+</body>
+<script>
+    const portfolioItems = document.querySelectorAll('.portfolio-item-wrapper')
+
+    portfolioItems.forEach(portfolioItem => {
+        portfolioItem.addEventListener('mouseover', () => {
+           
+            portfolioItem.childNodes[1].classList.add('img-darken');
+        })
+         portfolioItem.addEventListener('mouseout', () => {
+           
+            portfolioItem.childNodes[1].classList.remove('img-darken');
+        })
+    })
+</script>
+</html>

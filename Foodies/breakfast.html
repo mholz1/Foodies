@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>   
+    <meta charset="utf-8" />
+    <title>Foodies</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="nav-wrapper">
+            <div class="left-side">
+                <div class="nav-link-wrapper">
+                    <a href="index.html">Home</a>
+                </div>
+                <div class="nav-link-wrapper">
+                    <a href="about.html">Add Recipe</a>
+                </div>
+            </div>
+
+            <div class="right-side">
+                <div class="brand">
+                    <div>FOODIES</div>
+                </div>
+            </div>
+        </div>
+          
+        <div class="content-wrapper">
+            <div class="portfolio-items-wrapper">
+      
+              <div class="portfolio-item-wrapper">
+                <div class="portfolio-img-background" style="background-image:url(dougnuts.jpeg)"></div>
+                <div class="subtitle">
+                    <a href="https://www.foodnetwork.com/recipes/ina-garten/cinnamon-baked-doughnuts-recipe-2135621">Cinnamon Doughnuts</a>
+                </div>
+                
+            </div>
+      
+                <div class="portfolio-item-wrapper">
+                  <div class="portfolio-img-background" style="background-image:url(pancakes.jpeg)"></div>
+                  <div class="subtitle">
+                    <a href="https://www.foodnetwork.com/recipes/food-network-kitchen/pancakes-recipe-1913844">Pancakes</a>
+                  </div>
+                  
+            </div>
+      
+                <div class="portfolio-item-wrapper">
+                  <div class="portfolio-img-background" style="background-image:url(avocado.jpeg)"></div>
+                  <div class="subtitle">
+                      <a href="https://www.foodnetwork.com/recipes/food-network-kitchen/avocado-toasts-3364588">Avocado Toast</a>
+                  </div>
+                  
+            </div>
+      
+                <div class="portfolio-item-wrapper">
+                  <div class="portfolio-img-background" style="background-image:url(granola.jpeg)"></div>
+                  <div class="subtitle">
+                      <a href="https://www.foodnetwork.com/recipes/alton-brown/granola-recipe-1939521">Granola</a> 
+                  </div>
+                  
+            </div>
+      
+                <div class="portfolio-item-wrapper">
+                  <div class="portfolio-img-background" style="background-image:url(cheesedanish.jpeg)"></div>
+                  <div class="subtitle">
+                      <a href="https://www.foodnetwork.com/recipes/trisha-yearwood/easy-cheese-danish-5515491">Cheese Danish</a>
+                  </div>
+            </div>
+      
+                <div class="portfolio-item-wrapper">
+                  <div class="portfolio-img-background" style="background-image:url(blueberryscones.jpeg)"></div>
+                  <div class="subtitle">
+                     <a href="https://www.foodnetwork.com/recipes/tyler-florence/blueberry-scones-with-lemon-glaze-recipe-1914780">Blueberry Scones</a>
+                  </div>
+                  
+        
+            </div>
+
+                
+        </div>
+    </div>
+</body>
+<script>
+    const portfolioItems = document.querySelectorAll('.portfolio-item-wrapper')
+
+    portfolioItems.forEach(portfolioItem => {
+        portfolioItem.addEventListener('mouseover', () => {
+           
+            portfolioItem.childNodes[1].classList.add('img-darken');
+        })
+         portfolioItem.addEventListener('mouseout', () => {
+           
+            portfolioItem.childNodes[1].classList.remove('img-darken');
+        })
+    })
+</script>
+</html>

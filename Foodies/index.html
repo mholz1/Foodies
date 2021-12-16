@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>   
+    <meta charset="utf-8" />
+    <title>Foodies</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="nav-wrapper">
+            <div class="left-side">
+                <div class="nav-link-wrapper">
+                    <a href="index.html">Home</a>
+                </div>
+                <div class="nav-link-wrapper">
+                    <a href="about.html">Add Recipe</a>
+                </div>
+            </div>
+
+            <div class="right-side">
+                <div class="brand">
+                    <div>FOODIES</div>
+                </div>
+            </div>
+        </div>
+          
+        <div class="content-wrapper">
+            <div class="portfolio-items-wrapper">
+      
+              <div class="portfolio-item-wrapper">
+                <div class="portfolio-img-background" style="background-image:url(anna-pelzer-IGfIGP5ONV0-unsplash.jpg)"></div>
+                <div class="subtitle">
+                    <a href="healthyeats.html">Healthy Eats</a>
+                </div>
+                
+            </div>
+      
+                <div class="portfolio-item-wrapper">
+                  <div class="portfolio-img-background" style="background-image:url(kobby-mendez-xBFTjrMIC0c-unsplash.jpg)"></div>
+                  <div class="subtitle">
+                    <a href="drinks.html">Drinks</a>
+                  </div>
+                  
+            </div>
+      
+                <div class="portfolio-item-wrapper">
+                  <div class="portfolio-img-background" style="background-image:url(mike-meeks-zk-fclJdGas-unsplash.jpg)"></div>
+                  <div class="subtitle">
+                      <a href="dessert.html">Dessert</a>
+                  </div>
+                  
+            </div>
+      
+                <div class="portfolio-item-wrapper">
+                  <div class="portfolio-img-background" style="background-image:url(brooke-lark-HlNcigvUi4Q-unsplash.jpg)"></div>
+                  <div class="subtitle">
+                      <a href="breakfast.html">Breakfast</a> 
+                  </div>
+                  
+            </div>
+      
+                <div class="portfolio-item-wrapper">
+                  <div class="portfolio-img-background" style="background-image:url(sander-dalhuisen-nA6Xhnq2Od8-unsplash.jpg)"></div>
+                  <div class="subtitle">
+                      <a href="lunch.html">Lunch</a>
+                  </div>
+            </div>
+      
+                <div class="portfolio-item-wrapper">
+                  <div class="portfolio-img-background" style="background-image:url(ella-olsson-4dQiaWKiL-Y-unsplash.jpg)"></div>
+                  <div class="subtitle">
+                     <a href="dinner.html">Dinner</a>
+                  </div>
+                  
+        
+            </div>
+
+                
+        </div>
+    </div>
+</body>
+<script>
+    const portfolioItems = document.querySelectorAll('.portfolio-item-wrapper')
+
+    portfolioItems.forEach(portfolioItem => {
+        portfolioItem.addEventListener('mouseover', () => {
+           
+            portfolioItem.childNodes[1].classList.add('img-darken');
+        })
+         portfolioItem.addEventListener('mouseout', () => {
+           
+            portfolioItem.childNodes[1].classList.remove('img-darken');
+        })
+    })
+</script>
+</html>

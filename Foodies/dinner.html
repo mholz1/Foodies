@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>   
+    <meta charset="utf-8" />
+    <title>Foodies</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="nav-wrapper">
+            <div class="left-side">
+                <div class="nav-link-wrapper">
+                    <a href="index.html">Home</a>
+                </div>
+                <div class="nav-link-wrapper">
+                    <a href="about.html">Add Recipe</a>
+                </div>
+            </div>
+
+            <div class="right-side">
+                <div class="brand">
+                    <div>FOODIES</div>
+                </div>
+            </div>
+        </div>
+          
+        <div class="content-wrapper">
+            <div class="portfolio-items-wrapper">
+      
+              <div class="portfolio-item-wrapper">
+                <div class="portfolio-img-background" style="background-image:url(traditional-roast-lamb-76337-1.jpeg)"></div>
+                <div class="subtitle">
+                    <a href="https://www.taste.com.au/recipes/traditional-roast-lamb/2acb853a-237b-4177-bb85-fdec7977dbae">Roast Lamb</a>
+                </div>
+                
+            </div>
+      
+                <div class="portfolio-item-wrapper">
+                  <div class="portfolio-img-background" style="background-image:url(pork-ribs-with-smoky-barbecue-sauce-51931-1.jpeg)"></div>
+                  <div class="subtitle">
+                    <a href="https://www.taste.com.au/recipes/pork-ribs-smoky-barbecue-sauce/e4addf46-4739-49a5-95d7-b930acba00c6">Pork Ribs</a>
+                  </div>
+                  
+            </div>
+      
+                <div class="portfolio-item-wrapper">
+                  <div class="portfolio-img-background" style="background-image:url(classic-moussaka-79675-1.jpeg)"></div>
+                  <div class="subtitle">
+                      <a href="https://www.taste.com.au/recipes/classic-moussaka/88513a78-4b3d-4546-b985-32f4c33382a7">Moussaka</a>
+                  </div>
+                  
+            </div>
+      
+                <div class="portfolio-item-wrapper">
+                  <div class="portfolio-img-background" style="background-image:url(nacho.jpeg)"></div>
+                  <div class="subtitle">
+                      <a href="https://www.taste.com.au/recipes/beef-nachos/548cce8f-f9d3-4ca6-9111-029181bc630f?r=quickeasy/biccuul7">Beef Nachos</a> 
+                  </div>
+                  
+            </div>
+      
+                <div class="portfolio-item-wrapper">
+                  <div class="portfolio-img-background" style="background-image:url(beef.jpg)"></div>
+                  <div class="subtitle">
+                      <a href="https://www.taste.com.au/recipes/thai-beef-salad-2/a25475db-fd3c-4424-8da0-99b5b5486504">Thai Beef</a>
+                  </div>
+            </div>
+      
+                <div class="portfolio-item-wrapper">
+                  <div class="portfolio-img-background" style="background-image:url(rolls.jpg)"></div>
+                  <div class="subtitle">
+                     <a href="https://www.allrecipes.com/recipe/215378/classic-dinner-rolls/">Dinner Rolls</a>
+                  </div>
+                  
+        
+            </div>
+
+                
+        </div>
+    </div>
+</body>
+<script>
+    const portfolioItems = document.querySelectorAll('.portfolio-item-wrapper')
+
+    portfolioItems.forEach(portfolioItem => {
+        portfolioItem.addEventListener('mouseover', () => {
+           
+            portfolioItem.childNodes[1].classList.add('img-darken');
+        })
+         portfolioItem.addEventListener('mouseout', () => {
+           
+            portfolioItem.childNodes[1].classList.remove('img-darken');
+        })
+    })
+</script>
+</html>

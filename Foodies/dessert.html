@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>   
+    <meta charset="utf-8" />
+    <title>Foodies</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="nav-wrapper">
+            <div class="left-side">
+                <div class="nav-link-wrapper">
+                    <a href="index.html">Home</a>
+                </div>
+                <div class="nav-link-wrapper">
+                    <a href="about.html">Add Recipe</a>
+                </div>
+            </div>
+
+            <div class="right-side">
+                <div class="brand">
+                    <div>FOODIES</div>
+                </div>
+            </div>
+        </div>
+          
+        <div class="content-wrapper">
+            <div class="portfolio-items-wrapper">
+      
+              <div class="portfolio-item-wrapper">
+                <div class="portfolio-img-background" style="background-image:url(banoffee-cream-pudding-with-white-choc-crumble-128938-1.jpg)"></div>
+                <div class="subtitle">
+                    <a href="https://www.delicious.com.au/recipes/banoffee-cream-pudding-white-chocolate-crumble-recipe/q8fp8lbh?r=recipes/collections/77cijfrr">Banoffee Cream Pudding with white choc crumbe</a>
+                </div>
+                
+            </div>
+      
+                <div class="portfolio-item-wrapper">
+                  <div class="portfolio-img-background" style="background-image:url(chocolate-coconut-and-cherry-sponge-115907-2.jpg)"></div>
+                  <div class="subtitle">
+                    <a href="https://www.delicious.com.au/recipes/easy-chocolate-sponge-cake-recipe/8cwoh97p">Chocolate, Coconut, and Cherry Sponge Cake</a>
+                  </div>
+                  
+            </div>
+      
+                <div class="portfolio-item-wrapper">
+                  <div class="portfolio-img-background" style="background-image:url(rustic-rhubarb-tarts-30575-2.jpg)"></div>
+                  <div class="subtitle">
+                      <a href="https://www.delicious.com.au/recipes/rustic-rhubarb-tarts/8672bcda-c244-40b7-874c-673171de3072?r=recipes/collections/77cijfrr">Andrew McConnell's Rustic Rhubarb tarts</a>
+                  </div>
+                  
+            </div>
+      
+                <div class="portfolio-item-wrapper">
+                  <div class="portfolio-img-background" style="background-image:url(cheats-mille-feuille-14764-1.jpg)"></div>
+                  <div class="subtitle">
+                      <a href="https://www.delicious.com.au/recipes/cheats-mille-feuille/82397223-130c-47b3-aa52-5cca4dcf0d3e?current_section=recipes">Cheat's Mille-Feuille</a> 
+                  </div>
+                  
+            </div>
+      
+                <div class="portfolio-item-wrapper">
+                  <div class="portfolio-img-background" style="background-image:url(spiced-cherry-and-strawberry-pie-21382-2.jpg)"></div>
+                  <div class="subtitle">
+                      <a href="https://www.delicious.com.au/recipes/spiced-cherry-strawberry-pie/89b87780-e411-4255-8858-b65a77cd5073">Cherry and Strawberry Pie</a>
+                  </div>
+            </div>
+      
+                <div class="portfolio-item-wrapper">
+                  <div class="portfolio-img-background" style="background-image:url(gingerbread-brownies-14280-1.jpg)"></div>
+                  <div class="subtitle">
+                     <a href="https://www.delicious.com.au/recipes/gingerbread-brownies/736c53d3-b660-4241-9f9d-b4af6e42152a?current_section=recipes">Gingerbread Brownies</a>
+                  </div>
+                  
+        
+            </div>
+
+                
+        </div>
+    </div>
+</body>
+<script>
+    const portfolioItems = document.querySelectorAll('.portfolio-item-wrapper')
+
+    portfolioItems.forEach(portfolioItem => {
+        portfolioItem.addEventListener('mouseover', () => {
+           
+            portfolioItem.childNodes[1].classList.add('img-darken');
+        })
+         portfolioItem.addEventListener('mouseout', () => {
+           
+            portfolioItem.childNodes[1].classList.remove('img-darken');
+        })
+    })
+</script>
+</html>
